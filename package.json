@@ -1,12 +1,12 @@
 {
   "name": "@ryanforever/github-watcher",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "github webhook deploy",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "push": "npm i && npm version patch --no-git-tag-version && git add --all && git commit -m 'auto-build via npm' && git push origin --all"
+    "push": "npm i && npm version patch --no-git-tag-version && git add --all && git commit -m 'auto-build via npm' && git push origin --all && npm publish"
   },
   "keywords": [
     "github",
