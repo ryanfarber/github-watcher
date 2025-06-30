@@ -71,15 +71,14 @@ class GithubWatcher extends EventEmitter {
 
 			let command = [
 				`cd ${app.path}`,
-				"echo '\npulling git repo...\n'",
+				"echo '\nWATCHER: pulling git repo...\n'",
 				"git fetch origin main",
 				"git reset --hard origin/main",
-				// "echo 'installing npm packages...'",
-				// "npm ci",
 			]
 
+
 			if (app.startScript) {
-				command.push(`echo '\nrunning start script "${app.startScript}"\n'`,)
+				command.push(`echo '\nWATCHER: running start script "${app.startScript}"\n'`,)
 				command.push(app.startScript)
 			}
 
