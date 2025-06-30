@@ -112,10 +112,6 @@ class GithubWatcher extends EventEmitter {
 			let div = "#".repeat(title.length)
 			console.log(`\n${div}\n${title}\n${div}\n`)
 		}
-
-
-
-
 	}
 }
 
