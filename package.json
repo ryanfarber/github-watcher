@@ -1,0 +1,30 @@
+{
+  "name": "@ryanforever/github-watcher",
+  "version": "1.0.0",
+  "description": "github webhook deploy",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "github",
+    "deploy",
+    "webhooks"
+  ],
+  "author": "ryan forever",
+  "license": "ISC",
+  "dependencies": {
+    "@ryanforever/express-utils": "^1.0.6",
+    "@ryanforever/logger": "^6.0.13",
+    "@ryanforever/notify": "^1.0.7",
+    "express": "^4.21.2",
+    "kind-of": "^6.0.3"
+  },
+  "files": [
+    "src"
+  ],
+  "devDependencies": {
+    "dotenv": "^17.0.0"
+  }
+}
