@@ -71,7 +71,7 @@ class GithubWatcher extends EventEmitter {
 
 			let command = [
 				`cd ${app.path}`,
-				"echo 'pulling git repo...'",
+				"echo '\npulling git repo...\n'",
 				"git fetch origin main",
 				"git reset --hard origin/main",
 				// "echo 'installing npm packages...'",
@@ -79,12 +79,12 @@ class GithubWatcher extends EventEmitter {
 			]
 
 			if (app.startScript) {
-				command.push("echo 'running start script'",)
+				command.push(`echo '\nrunning start script "${app.startScript}"\n'`,)
 				command.push(app.startScript)
 			}
 
 			command = ["-i", "-c", command.join(" && ")]
-			
+
 			let options = {
 				env: process.env,
 				stdio: "inherit"
