@@ -1,6 +1,6 @@
 {
   "name": "@ryanforever/github-watcher",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "github webhook deploy",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,7 @@
   "author": "ryan forever",
   "license": "ISC",
   "dependencies": {
+    "@ryanforever/airtable": "^1.2.33",
     "@ryanforever/express-utils": "^1.0.6",
     "@ryanforever/logger": "^6.0.13",
     "@ryanforever/notify": "^1.0.7",

@@ -24,6 +24,13 @@ app.disable("x-powered-by")
 app.get("/",sendStatus(200))
 app.get("/ping", sendStatus(200))
 app.get("/health", sendStatus(200))
+
+app.post("/config", (req, res) => {
+	res.sendStatus(200)
+	let data = req.body
+
+	bus.emit("configUpdated", data)
+})
 app.post("/deploy", (req, res) => {
 	res.sendStatus(200)
 	let data = req.body
